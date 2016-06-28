@@ -1,11 +1,25 @@
 Memcached Util
 ==============
 
-A chef recipe for installing memcached on a utility instance. Specify the name of the utility instance on `memcached_util/attributes/default.rb`.
+A chef recipe for installing memcached on a utility instance. 
+
+Instructions
+------------
+
+To use this recipe,
+1. Specify the name of the utility instance that will run memcached on `memcached_util/attributes/default.rb`.
+2. Add `include_recipe "memcached_util"` on `main/recipes/default.rb`.
+3. Read the config file `/data/APPNAME/current/config/memcached_util.yml` from your application.
+
+More Information
+----------------
+
+Specify the name of the utility instance on `memcached_util/attributes/default.rb`. You can also change the memory usage.
 
 ```
 default[:memcached] = {
   :utility_name => "memcached",
+  :memusage => "64",
   # ...
 }
 ```
