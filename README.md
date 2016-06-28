@@ -7,9 +7,9 @@ Instructions
 ------------
 
 To use this recipe,
-1. Specify the name of the utility instance that will run memcached on `memcached_util/attributes/default.rb`.
-2. Add `include_recipe "memcached_util"` on `main/recipes/default.rb`.
-3. Read the config file `/data/APPNAME/current/config/memcached_util.yml` from your application.
+1. Specify the name of the utility instance that will run memcached on `memcached_util/attributes/default.rb`.  
+2. Add `include_recipe "memcached_util"` on `main/recipes/default.rb`.  
+3. Read the config file `/data/APPNAME/current/config/memcached_util.yml` from your application.  
 
 More Information
 ----------------
